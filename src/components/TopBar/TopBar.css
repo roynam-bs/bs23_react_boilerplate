@@ -1,0 +1,57 @@
+.top-bar {
+    height: 10vh;
+    width: 100%;
+    margin: 0;
+    position: sticky;
+    border-bottom: 3px solid #F8F8FA;
+    background-color: #FFFFFF;
+    align-items: center;
+    display: grid;
+    grid: auto / 1fr 10fr 1fr;
+    gap: 5px;
+}
+
+.logo-div {
+    height: 10vh;
+    width: 12vw;
+    z-index: 0;
+    left: 0;
+}
+
+.app-logo {
+    margin: 9px 20px;
+    height: 50px;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+.app-logo:hover {
+    animation: App-logo-spin infinite 20s linear;
+}
+
+.user-div {
+    height: 10vh;
+    width: 8vw;
+    z-index: 0;
+    left: 0;
+}
+
+.pull-right {
+    float: right !important;
+}
+
+.sign-in-button {
+    margin: 10px 15px;
+    cursor: pointer;
+    padding: 15px 33px;
+    border: none;
+    background-color: #FFFFFF;
+}
+
+.sign-in-button:hover  {
+    background-color: #1CA0DB;
+    color: #F0F0F7;
+    font-weight: 700;
+    border: 1px solid #F8F8FA;
+    border-radius: 5px;
+}
