@@ -1,21 +1,23 @@
 import './SideBar.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {Link} from "react-router-dom";
+import { faHouse, faGear } from '@fortawesome/free-solid-svg-icons';
 
-
-function SideBar() {
-    return(
-        <div className="side-bar">
-            <div className="menu-item">
-                <div className="menu-list-item">
-                    <FontAwesomeIcon icon="fa fa-house" />
+const SideBar = () => {
+    return <div className="side-bar">
+            <div className="menu-list">
+                <Link className="menu-list-item" to="/">
+                    <FontAwesomeIcon className="item-icon" icon={faHouse} />
                     <span>Home</span>
-                </div>
+                </Link>
             </div>
-            <div className="menu-item">
-                <div className="menu-list-item">Settings</div>
+            <div className="menu-list">
+                <Link className="menu-list-item" to="/settings">
+                    <FontAwesomeIcon className="item-icon" icon={faGear} />
+                    <span>Settings</span>
+                </Link>
             </div>
         </div>
-    );
 }
 
 export default SideBar;

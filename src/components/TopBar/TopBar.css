@@ -1,7 +1,7 @@
 .top-bar {
-    height: 10vh;
-    width: 100%;
-    margin: 0;
+    height: 8vh;
+    width: 87%;
+    margin-left: 230px;
     position: sticky;
     border-bottom: 3px solid #F8F8FA;
     background-color: #FFFFFF;
@@ -12,15 +12,15 @@
 }
 
 .logo-div {
-    height: 10vh;
+    height: 8vh;
     width: 12vw;
     z-index: 0;
     left: 0;
 }
 
 .app-logo {
-    margin: 9px 20px;
-    height: 50px;
+    margin: 12px 20px;
+    height: 48px;
     pointer-events: none;
     cursor: pointer;
 }
@@ -28,9 +28,26 @@
 .app-logo:hover {
     animation: App-logo-spin infinite 20s linear;
 }
+.search {
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+}
+
+.search-bar {
+    background-color: transparent;
+    padding: 10px 15px;
+    width: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar:focus {
+    border: none;
+    outline: none;
+}
 
 .user-div {
-    height: 10vh;
+    height: 8vh;
     width: 8vw;
     z-index: 0;
     left: 0;
@@ -40,15 +57,16 @@
     float: right !important;
 }
 
-.sign-in-button {
-    margin: 10px 15px;
+.button-sign-in {
+    margin: 15px;
     cursor: pointer;
     padding: 15px 33px;
     border: none;
     background-color: #FFFFFF;
+    color: #282C42;
 }
 
-.sign-in-button:hover  {
+.button-sign-in:hover  {
     background-color: #1CA0DB;
     color: #F0F0F7;
     font-weight: 700;
